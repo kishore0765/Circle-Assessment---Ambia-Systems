@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background: black;
+  font-family: Arial, sans-serif;
+}
+
+/* HOME PAGE */
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ASSESSMENT PAGE */
+
+.container {
+  width: 320px;
+  height: 360px;
+  margin: 60px auto;
+  position: relative;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+/* Active circle color */
+
+.circle.active {
+  background: #19e5e5;
+  border-color: #19e5e5;
+}
+
+/* Center circle behind all */
+
+.center-circle {
+  z-index: 1;
+}
+
+/* Other circles above center */
+
+.circle:not(.center-circle) {
+  z-index: 2;
+}

@@ -5,7 +5,7 @@ export default function Home() {
     <div className="home">
       <Link to="/assessment">
         <button className="start-btn">
-          Start Assessment
+          Start
         </button>
       </Link>
     </div>
